@@ -1,0 +1,443 @@
+
+{
+			"attributes": {
+				"ContactJobTitle": {
+					"modelConfig": {
+						"path": "PDS.ContactJobTitle"
+					}
+				},
+				"ContactLanguage": {
+					"modelConfig": {
+						"path": "PDS.ContactLanguage"
+					}
+				},
+				"AccountAccountCategory": {
+					"modelConfig": {
+						"path": "PDS.AccountAccountCategory"
+					}
+				},
+				"AccountIndustry": {
+					"modelConfig": {
+						"path": "PDS.AccountIndustry"
+					}
+				},
+				"ContactMobilePhone": {
+					"modelConfig": {
+						"path": "PDS.ContactMobilePhone"
+					}
+				},
+				"ContactEmail": {
+					"modelConfig": {
+						"path": "PDS.ContactEmail"
+					}
+				},
+				"AccountWeb": {
+					"modelConfig": {
+						"path": "PDS.AccountWeb"
+					}
+				}
+			},
+			"attributes1": {
+					"LookupAttribute_kkwpg1v": {
+						"modelConfig": {
+							"path": "PDS.Owner"
+						}
+					},
+					"LookupAttribute_bsl9tmh": {
+						"modelConfig": {
+							"path": "PDS.Group"
+						}
+					},
+					"DateTimeAttribute_o4oc223": {
+						"modelConfig": {
+							"path": "PDS.RegisteredOn"
+						}
+					},
+					"LookupAttribute_ffqlbcd": {
+						"modelConfig": {
+							"path": "PDS.Priority"
+						}
+					},
+					"LookupAttribute_yfj24p1": {
+						"modelConfig": {
+							"path": "PDS.Category"
+						}
+					},
+					"DateTimeAttribute_26hjo04": {
+						"modelConfig": {
+							"path": "PDS.SolutionDate"
+						}
+					},
+					"StringAttribute_owqjs07": {
+						"modelConfig": {
+							"path": "PDS.Subject"
+						}
+					},
+					"LookupAttribute_c08bwtk": {
+						"modelConfig": {
+							"path": "PDS.Account"
+						}
+					},
+					"DateTimeAttribute_ql7d86w": {
+						"modelConfig": {
+							"path": "PDS.ResponseDate"
+						}
+					},
+					"DateTimeAttribute_4hinv2l": {
+						"modelConfig": {
+							"path": "PDS.RespondedOn"
+						}
+					},
+					"DateTimeAttribute_8may6rw": {
+						"modelConfig": {
+							"path": "PDS.FirstSolutionProvidedOn"
+						}
+					},
+					"DateTimeAttribute_cv9ru2m": {
+						"modelConfig": {
+							"path": "PDS.SolutionProvidedOn"
+						}
+					},
+					"DateTimeAttribute_eurb20a": {
+						"modelConfig": {
+							"path": "PDS.ClosureDate"
+						}
+					},
+					"CaseLifecycleList": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "CaseLifecycleListDS",
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "StartDate"
+									}
+								]
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"CaseLifecycleListDS_Status": {
+									"modelConfig": {
+										"path": "CaseLifecycleListDS.Status"
+									}
+								},
+								"CaseLifecycleListDS_StateDurationInMinutes": {
+									"modelConfig": {
+										"path": "CaseLifecycleListDS.StateDurationInMinutes"
+									}
+								},
+								"CaseLifecycleListDS_StartDate": {
+									"modelConfig": {
+										"path": "CaseLifecycleListDS.StartDate"
+									}
+								},
+								"CaseLifecycleListDS_EndDate": {
+									"modelConfig": {
+										"path": "CaseLifecycleListDS.EndDate"
+									}
+								},
+								"CaseLifecycleListDS_SupportLevel": {
+									"modelConfig": {
+										"path": "CaseLifecycleListDS.SupportLevel"
+									}
+								},
+								"CaseLifecycleListDS_Owner": {
+									"modelConfig": {
+										"path": "CaseLifecycleListDS.Owner"
+									}
+								},
+								"CaseLifecycleListDS_Group": {
+									"modelConfig": {
+										"path": "CaseLifecycleListDS.Group"
+									}
+								},
+								"CaseLifecycleListDS_Id": {
+									"modelConfig": {
+										"path": "CaseLifecycleListDS.Id"
+									}
+								}
+							}
+						}
+					},
+					"SubordinateCasesList": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "SubordinateCasesListDS",
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "SolutionDate"
+									}
+								]
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"SubordinateCasesListDS_Number": {
+									"modelConfig": {
+										"path": "SubordinateCasesListDS.Number"
+									}
+								},
+								"SubordinateCasesListDS_Subject": {
+									"modelConfig": {
+										"path": "SubordinateCasesListDS.Subject"
+									}
+								},
+								"SubordinateCasesListDS_Owner": {
+									"modelConfig": {
+										"path": "SubordinateCasesListDS.Owner"
+									}
+								},
+								"SubordinateCasesListDS_Status": {
+									"modelConfig": {
+										"path": "SubordinateCasesListDS.Status"
+									}
+								},
+								"SubordinateCasesListDS_SolutionDate": {
+									"modelConfig": {
+										"path": "SubordinateCasesListDS.SolutionDate"
+									}
+								},
+								"SubordinateCasesListDS_Id": {
+									"modelConfig": {
+										"path": "SubordinateCasesListDS.Id"
+									}
+								}
+							}
+						}
+					},
+					"LookupAttribute_651gjhe": {
+						"modelConfig": {
+							"path": "PDS.ServiceItem"
+						}
+					},
+					"ActivitiesList": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "ActivitiesListDS",
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "DueDate"
+									}
+								]
+							},
+							"filterAttributes": [
+								{
+									"loadOnChange": true,
+									"name": "ActivitiesList_PredefinedFilter"
+								}
+							]
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"ActivitiesListDS_Title": {
+									"modelConfig": {
+										"path": "ActivitiesListDS.Title"
+									}
+								},
+								"ActivitiesListDS_Owner": {
+									"modelConfig": {
+										"path": "ActivitiesListDS.Owner"
+									}
+								},
+								"ActivitiesListDS_Status": {
+									"modelConfig": {
+										"path": "ActivitiesListDS.Status"
+									}
+								},
+								"ActivitiesListDS_DueDate": {
+									"modelConfig": {
+										"path": "ActivitiesListDS.DueDate"
+									}
+								},
+								"ActivitiesListDS_Id": {
+									"modelConfig": {
+										"path": "ActivitiesListDS.Id"
+									}
+								}
+							}
+						}
+					},
+					"LookupAttribute_ec6krvo": {
+						"modelConfig": {
+							"path": "PDS.ParentCase"
+						}
+					},
+					"LookupAttribute_ck7fmvs": {
+						"modelConfig": {
+							"path": "PDS.ClosureCode"
+						}
+					},
+					"StringAttribute_qmmwoms": {
+						"modelConfig": {
+							"path": "PDS.Solution"
+						}
+					},
+					"LookupAttribute_9ccrce6": {
+						"modelConfig": {
+							"path": "PDS.SatisfactionLevel"
+						}
+					},
+					"StringAttribute_v5f5yms": {
+						"modelConfig": {
+							"path": "PDS.SatisfactionLevelComment"
+						}
+					},
+					"KnowledgeBaseArticlesList": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "KnowledgeBaseArticlesListDS",
+							"filterAttributes": [
+								{
+									"loadOnChange": true,
+									"name": "KnowledgeBaseArticlesList_PredefinedFilter"
+								}
+							],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "KnowledgeBaseViewsCount"
+									}
+								]
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"KnowledgeBaseArticlesListDS_KnowledgeBase": {
+									"modelConfig": {
+										"path": "KnowledgeBaseArticlesListDS.KnowledgeBase"
+									}
+								},
+								"KnowledgeBaseArticlesListDS_KnowledgeBaseType": {
+									"modelConfig": {
+										"path": "KnowledgeBaseArticlesListDS.KnowledgeBaseType"
+									}
+								},
+								"KnowledgeBaseArticlesListDS_KnowledgeBaseViewsCount": {
+									"modelConfig": {
+										"path": "KnowledgeBaseArticlesListDS.KnowledgeBaseViewsCount"
+									}
+								},
+								"KnowledgeBaseArticlesListDS_Id": {
+									"modelConfig": {
+										"path": "KnowledgeBaseArticlesListDS.Id"
+									}
+								}
+							}
+						}
+					},
+					"KnowledgeBaseArticlesList_PredefinedFilter": {
+						"value": null
+					},
+					"DataGrid_k060vne": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "DataGrid_k060vneDS"
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"DataGrid_k060vneDS_Status": {
+									"modelConfig": {
+										"path": "DataGrid_k060vneDS.Status"
+									}
+								},
+								"DataGrid_k060vneDS_StateDurationInMinutes": {
+									"modelConfig": {
+										"path": "DataGrid_k060vneDS.StateDurationInMinutes"
+									}
+								},
+								"DataGrid_k060vneDS_StartDate": {
+									"modelConfig": {
+										"path": "DataGrid_k060vneDS.StartDate"
+									}
+								},
+								"DataGrid_k060vneDS_EndDate": {
+									"modelConfig": {
+										"path": "DataGrid_k060vneDS.EndDate"
+									}
+								},
+								"DataGrid_k060vneDS_Id": {
+									"modelConfig": {
+										"path": "DataGrid_k060vneDS.Id"
+									}
+								}
+							}
+						}
+					},
+					"LookupAttribute_uxme97k": {
+						"modelConfig": {
+							"path": "PDS.SolvedOnSupportLevel"
+						}
+					},
+					"StringAttribute_ntidmah": {
+						"modelConfig": {
+							"path": "PDS.Symptoms"
+						}
+					},
+					"LookupAttribute_y15wp7h": {
+						"modelConfig": {
+							"path": "PDS.ServicePact"
+						}
+					},
+					"LookupAttribute_ctwt6pv": {
+						"modelConfig": {
+							"path": "PDS.Contact"
+						}
+					},
+					"LookupAttribute_h823ge0": {
+						"modelConfig": {
+							"path": "PDS.Origin"
+						}
+					},
+					"LookupAttribute_j8la87t": {
+						"modelConfig": {
+							"path": "PDS.SupportLevel"
+						}
+					},
+					"ActivitiesList_PredefinedFilter": {
+						"value": {
+							"items": {
+								"1702052d-5fdd-44f7-9e7c-b1a1307d2e23": {
+									"filterType": 4,
+									"comparisonType": 4,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": false,
+									"leftExpression": {
+										"expressionType": 0,
+										"columnPath": "ActivityCategory"
+									},
+									"isAggregative": false,
+									"dataValueType": 10,
+									"referenceSchemaName": "ActivityCategory",
+									"rightExpressions": [
+										{
+											"expressionType": 2,
+											"parameter": {
+												"dataValueType": 10,
+												"value": {
+													"Name": "Email",
+													"Id": "8038a396-7825-e011-8165-00155d043204",
+													"value": "8038a396-7825-e011-8165-00155d043204",
+													"displayValue": "Email"
+												}
+											}
+										}
+									]
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Activity"
+						}
+					}
+				}
+}
+		
+	
