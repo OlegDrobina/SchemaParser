@@ -43,7 +43,7 @@ function createVariables(attributes) {
 }
 
 /*
-    @public method parseReceivedObject
+    @public method processReceivedObject
     @returns array
 **/
 function processReceivedObject(attributesFromObject, variablesArray, jsonFileContent) {
